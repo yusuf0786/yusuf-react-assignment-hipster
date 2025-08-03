@@ -332,7 +332,7 @@
 @media (min-width: 769px) {
   .theme2 .sidebar {
     transform: translateX(0);
-    top: 100px;
+    top: 90px;
   }
 }
 
