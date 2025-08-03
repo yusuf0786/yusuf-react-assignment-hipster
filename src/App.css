@@ -131,7 +131,7 @@
 }
 
 .theme2 .header-content {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .brand-text {
@@ -339,12 +339,18 @@
 /* Mobile sidebar */
 @media (max-width: 768px) {
   .sidebar {
-    top: 70px;
+    top: 97px;
     z-index: 50;
   }
 
   .sidebar-mobile-open {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    top: 90px;
   }
 }
 
@@ -1127,7 +1133,7 @@
     display: none;
   }
 
-  .theme2 .sidebar {
+  .theme2 .sidebar:not(.sidebar-mobile-open) {
     display: none;
   }
 
@@ -1173,6 +1179,15 @@
 }
 
 @media (max-width: 480px) {
+
+  .theme2 .brand-text {
+    font-size: 1.25rem;
+  }
+
+  .header-content {
+    padding: 0 1rem;
+  }
+
   .hero-section {
     padding: 2rem 1rem !important;
   }
